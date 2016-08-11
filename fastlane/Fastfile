@@ -1,0 +1,3 @@
+lane :test do
+  remove_provisioning_profile
+end

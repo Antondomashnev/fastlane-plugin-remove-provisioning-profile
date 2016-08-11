@@ -6,11 +6,11 @@ module Fastlane
       end
 
       def self.description
-        "Remove provision profile from your local machine"
+        "Remove provisioning profile from your local machine"
       end
 
       def self.authors
-        ["Anton Domashnev"]
+        ["antondomashnev"]
       end
 
       def self.available_options

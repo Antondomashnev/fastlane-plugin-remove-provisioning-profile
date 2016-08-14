@@ -1,6 +1,7 @@
 # remove_provisioning_profile plugin
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-remove_provisioning_profile)
+[![Build Status](https://travis-ci.org/Antondomashnev/fastlane-plugin-remove-provisioning-profile.svg?branch=master)](https://travis-ci.org/Antondomashnev/fastlane-plugin-remove-provisioning-profile)
 
 ## Getting Started
 

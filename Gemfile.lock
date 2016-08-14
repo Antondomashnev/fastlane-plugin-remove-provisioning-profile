@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fastlane-plugin-remove_provisioning_profile (0.1.0)
+    fastlane-plugin-remove_provisioning_profile (1.0.0)
 
 GEM
   remote: https://rubygems.org/

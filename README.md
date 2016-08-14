@@ -12,15 +12,33 @@ fastlane add_plugin remove_provisioning_profile
 
 ## About remove_provisioning_profile
 
-Remove provision profile from your local machine
+The initial use case for the plugin has been discussed in [fastlane issue](https://github.com/fastlane/fastlane/issues/5601).
+When `match` or developer adds new provision  profile Xcode still keeps the old one even if the developer doesn't need it anymore sometimes. In that case this plugin could help by removing these old or unused provisioning profiles.  
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+Available options
+
+* `:app_identifier` - the app identifier
+* `:type` - provisioning profile type, supported values `["development", "adhoc", "appstore"]`
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`. 
+Example to run the action
+```
+remove_provision_profiles(app_identifier: "com.antondomashnev.fastlane-plugin-remove-provisioning-profile", type: "development")
+```
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+Example `fastfile` from our team. The lane removes the old provisioning profiles of all types and then runs `match` to create and load new
+```
+desc "Recreate the provisioning profiles so you can deploy to your device, release on fabric and push to app store"
+  lane :renew_certificates do
+    types = ["development", "adhoc", "appstore"]
+    app_identifier = "com.antondomashnev.fastlane-plugin-remove-provisioning-profile"
+    types.each do |type|
+      remove_provision_profiles(app_identifier: app_identifier, type: type)
+      match(app_identifier: app_identifier, type: type, force: true)      
+    end
+end
+```
 
 ## Run tests for this plugin
 

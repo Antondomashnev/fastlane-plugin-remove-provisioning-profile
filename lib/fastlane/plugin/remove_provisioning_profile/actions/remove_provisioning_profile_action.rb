@@ -72,7 +72,11 @@ module Fastlane
                                        type: String,
                                        verify_block: proc do |value|
                                          UI.user_error!("Invalid provisioning profile type '#{value}'. Supported types are: 'development', 'adhoc', 'appstore'") unless ["development", "adhoc", "appstore"].include?(value)
-                                       end)
+                                       end),
+          FastlaneCore::ConfigItem.new(key: :provisioning_profiles_folder,
+                                       description: "Folder with provisioning profiles",
+                                       optional: true,
+                                       type: String)
         ]
       end
 

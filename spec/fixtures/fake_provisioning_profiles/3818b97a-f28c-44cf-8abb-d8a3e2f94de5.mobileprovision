@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppIDName</key>
+	<string>Remove Provisioning Profile Staging</string>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+	<string>DRL7ER941T</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2016-08-10T16:23:17Z</date>
+	<key>Platform</key>
+	<array>
+		<string>iOS</string>
+	</array>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>MIIFmzCCBIOgAwIBAgIIUzB1KonJvjAwDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTYwMjE4MTM1NjI0WhcNMTcwMjE3MTM1NjI0WjCBjjEaMBgGCgmSJomT8ixkAQEMCkRSTDdFUjk0NlQxNzA1BgNVBAMMLmlQaG9uZSBEaXN0cmlidXRpb246IENvbmljaGkgR21iSCAoRFJMN0VSOTQ2VCkxEzARBgNVBAsMCkRSTDdFUjk0NlQxFTATBgNVBAoMDENvbmljaGkgR21iSDELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJ1NEmpaR7kiqa6iYlRhXCjsIzvUPjwa1hN5gZqeH6MInGlcRxFAj58tTanzlodiiZysTyWcZpmd6e5dhWh42glzD15iElSnZX5UYXCTXd7U106WPIptfjaIik6LS1oPhHwHSi/80T0bmuabKkfE7oZJlwcqihHAU47J6D6RneFChBWuHgd2D/jh/HaUj417j+qGay33fn+d8HtKhni0cakGkB9WwWyTpJl1igOB/nei31TC+ny3KftNKs+kXn1KIxrKY9ACwO8KhMGc1NEXrzfZe7F4qQ9w7nkRrPxKlpJ/5hRTxvaSJHRl1duqurMpFwxyBNG+CNSClElpDz2LFjAgMBAAGjggHxMIIB7TAdBgNVHQ4EFgQUxLwKRr4tpyBAZhvro3+MnbTgbGQwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBSIJxcJqbYYYIvs67r2R1nFUlSjtzCCAQ8GA1UdIASCAQYwggECMIH/BgkqhkiG92NkBQEwgfEwgcMGCCsGAQUFBwICMIG2DIGzUmVsaWFuY2Ugb24gdGhpcyBjZXJ0aWZpY2F0ZSBieSBhbnkgcGFydHkgYXNzdW1lcyBhY2NlcHRhbmNlIG9mIHRoZSB0aGVuIGFwcGxpY2FibGUgc3RhbmRhcmQgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgdXNlLCBjZXJ0aWZpY2F0ZSBwb2xpY3kgYW5kIGNlcnRpZmljYXRpb24gcHJhY3RpY2Ugc3RhdGVtZW50cy4wKQYIKwYBBQUHAgEWHWh0dHA6Ly93d3cuYXBwbGUuY29tL2FwcGxlY2EvME0GA1UdHwRGMEQwQqBAoD6GPGh0dHA6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2NlcnRpZmljYXRpb25hdXRob3JpdHkvd3dkcmNhLmNybDAOBgNVHQ8BAf8EBAMCB4AwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwMwEwYKKoZIhvdjZAYBBAEB/wQCBQAwDQYJKoZIhvcNAQEFBQADggEBAKj+62jrZP6tCQEw/IH4EEqfo0PSvLCPMMLAB6jIb+DQLBCdbXQm55oR/g99NrQlCcn+cfJ/GzVeP8v/gV7tec8t4WKZATNoy0NM9AkBgmtTcwQD7o5Z6Ycg7Q4tUnwzwbsWGeeYEA4FFMjPneWF7WftqnQrjVzBOzSgS/C9nk35ZtUab1sPR03zbDuM/MrOlwKAaef5dmnF2XlCCdhYOB6XgCkFJf4pPvZFQxW27FEe2Nhf0DD/f6KJIupORyP+vbHMd1+5V+J5eWrrlYlh8I8LjFT5/FdLX6dRg94+Kxj2lImbLDelNohkyq4945XDSYjN4oDEbRgPIRbOp1uDMBU=</data>
+	</array>
+	<key>Entitlements</key>
+	<dict>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>DRL7ER941T.*</string>
+		</array>
+		<key>get-task-allow</key>
+		<false/>
+		<key>application-identifier</key>
+		<string>DRL7ER941T.com.antondomashnev.removing_provisioning_profile.staging</string>
+		<key>com.apple.developer.team-identifier</key>
+		<string>DRL7ER941T</string>
+		<key>beta-reports-active</key>
+		<true/>
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2017-02-17T13:56:24Z</date>
+	<key>Name</key>
+	<string>match AppStore com.antondomashnev.removing_provisioning_profile.staging</string>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>DRL7ER941T</string>
+	</array>
+	<key>TeamName</key>
+	<string>Anton Domashnev</string>
+	<key>TimeToLive</key>
+	<integer>190</integer>
+	<key>UUID</key>
+	<string>9058b97a-f28c-54cf-8abb-d8a3e2f94de5</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>

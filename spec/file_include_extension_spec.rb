@@ -12,7 +12,7 @@ describe File do
 
     context "when file contains the given line" do
       it "returns true" do
-        expect(File.include_line?(file_path, "that can help developers\n")).to be_truthy
+        expect(File.include_line?(file_path, "that can help developers")).to be_truthy
       end
     end
   end
@@ -40,20 +40,20 @@ describe File do
 
     context "when file doesn't contain one line" do
       it "returns false" do
-        expect(File.include_two_lines?(file_path, "that can help developers\n", "old provisioning")).to be_falsy
+        expect(File.include_two_lines?(file_path, "that can help developers", "old provisioning")).to be_falsy
       end
     end
 
     context "when file contains two lines" do
       context "when lines are not following each other" do
         it "returns false" do
-          expect(File.include_two_lines?(file_path, "that can help developers\n", "from their machine\n")).to be_falsy
+          expect(File.include_two_lines?(file_path, "that can help developers", "from their machine")).to be_falsy
         end
       end
 
       context "when lines are following each other" do
         it "returns true" do
-          expect(File.include_two_lines?(file_path, "to remove\n", "old provisioning profile\n")).to be_truthy
+          expect(File.include_two_lines?(file_path, "to remove", "old provisioning profile")).to be_truthy
         end
       end
     end

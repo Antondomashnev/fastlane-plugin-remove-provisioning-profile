@@ -1,5 +1,9 @@
 ## Master
 
+## 1.0.2
+
+* Checks if the line in the file has valid_encoding - antondomashnev
+
 
 ## 1.0.1
 

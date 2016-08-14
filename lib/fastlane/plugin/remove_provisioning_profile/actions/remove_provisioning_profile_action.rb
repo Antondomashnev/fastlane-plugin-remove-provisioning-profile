@@ -13,9 +13,6 @@ module Fastlane
         Dir.foreach(provisioning_profiles_folder) do |file|
           next unless file.end_with?(".mobileprovision")
           file_path = "#{provisioning_profiles_folder}/#{file}"
-          puts file_path
-          puts self.mobileprovision_of_app_identifier?(file_path, app_identifier)
-          puts self.mobileprovision_of_type?(file_path, type)
           if self.mobileprovision_of_app_identifier?(file_path, app_identifier) && self.mobileprovision_of_type?(file_path, type)
             provisioning_profiles << file_path
             UI.message("Found matched provisioning profile at '#{file_path}'") if $verbose

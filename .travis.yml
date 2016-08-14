@@ -1,4 +1,13 @@
 # os: osx # enable this if you need macOS support
 language: ruby
+cache:
+  directories:
+    - bundle
+
 rvm:
   - 2.2.4
+
+bundler_args: "--without documentation --path bundle"
+
+before_install:
+  - gem install bundler

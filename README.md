@@ -13,7 +13,7 @@ fastlane add_plugin remove_provisioning_profile
 ## About remove_provisioning_profile
 
 The initial use case for the plugin has been discussed in [fastlane issue](https://github.com/fastlane/fastlane/issues/5601).
-When `match` or developer adds new provision  profile Xcode still keeps the old one even if the developer doesn't need it anymore sometimes. In that case this plugin could help by removing these old or unused provisioning profiles.  
+When `match` or developer adds new provision  profile Xcode still keeps the old one even if the developer doesn't need it anymore. In that case this plugin could help by removing these old or unused provisioning profiles.  
 
 Available options
 

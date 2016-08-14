@@ -27,7 +27,7 @@ Example to run the action
 remove_provision_profiles(app_identifier: "com.antondomashnev.fastlane-plugin-remove-provisioning-profile", type: "development")
 ```
 
-Example `fastfile` from our team. The lane removes the old provisioning profiles of all types and then runs `match` to create and load new
+Example `lane` from our team's `fastfile`. The lane removes the old provisioning profiles of all types and then runs `match` to create and load new
 ```
 desc "Recreate the provisioning profiles so you can deploy to your device, release on fabric and push to app store"
   lane :renew_certificates do

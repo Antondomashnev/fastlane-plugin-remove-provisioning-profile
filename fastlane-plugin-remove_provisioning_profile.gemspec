@@ -10,14 +10,12 @@ Gem::Specification.new do |spec|
   spec.email         = %q{antondomashnev@gmail.com}
 
   spec.summary       = %q{Remove provision profile from your local machine}
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-remove_provisioning_profile"
+  spec.homepage      = "https://github.com/Antondomashnev/fastlane-plugin-remove-provisioning-profile"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
-
-  # spec.add_dependency 'your-dependency', '~> 1.0.0'
 
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'bundler'

@@ -26,7 +26,7 @@ Available options
 
 Example to run the action
 ```
-remove_provision_profiles(app_identifier: "com.antondomashnev.fastlane-plugin-remove-provisioning-profile", type: "development")
+remove_provisioning_profile(app_identifier: "com.antondomashnev.fastlane-plugin-remove-provisioning-profile", type: "development")
 ```
 
 Example `lane` from our team's `fastfile`. The lane removes the old provisioning profiles of all types and then runs `match` to create and load new
@@ -36,7 +36,7 @@ desc "Recreate the provisioning profiles so you can deploy to your device, relea
     types = ["development", "adhoc", "appstore"]
     app_identifier = "com.antondomashnev.fastlane-plugin-remove-provisioning-profile"
     types.each do |type|
-      remove_provision_profiles(app_identifier: app_identifier, type: type)
+      remove_provisioning_profile(app_identifier: app_identifier, type: type)
       match(app_identifier: app_identifier, type: type, force: true)      
     end
 end

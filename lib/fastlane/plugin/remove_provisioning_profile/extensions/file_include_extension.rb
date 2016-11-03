@@ -14,13 +14,13 @@ class File
     end
   end
 
-  def self.include_two_lines?(file_path, included_line_1, included_line_2)
-    stripped_included_line_1 = included_line_1.strip
-    stripped_included_line_2 = included_line_2.strip
+  def self.include_two_lines?(file_path, included_line1, included_line2)
+    stripped_included_line1 = included_line1.strip
+    stripped_included_line2 = included_line2.strip
     previous_line = ""
     File.foreach(file_path).any? do |line|
       next unless line.valid_encoding?
-      if previous_line.strip == stripped_included_line_1 && line.strip == stripped_included_line_2
+      if previous_line.strip == stripped_included_line1 && line.strip == stripped_included_line2
         true
       else
         previous_line = line

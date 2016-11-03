@@ -7,6 +7,11 @@ module Fastlane
         app_identifier = params[:app_identifier]
         type = params[:type]
         provisioning_profiles_folder = params[:provisioning_profiles_folder] ? params[:provisioning_profiles_folder] : "#{Dir.home}/Library/MobileDevice/Provisioning Profiles"
+        unless Dir.exist?(provisioning_profiles_folder)
+          UI.important("There is no directory at the given path '#{provisioning_profiles_folder}' skipping the action")
+          return
+        end
+
         UI.message("Looking for '#{type}' provisioning profile of '#{app_identifier}' in '#{provisioning_profiles_folder}'") if $verbose
 
         provisioning_profiles = []
@@ -61,7 +66,7 @@ module Fastlane
                                        optional: false,
                                        type: String,
                                        verify_block: proc do |value|
-                                         UI.user_error!("No app identifier") if value.to_s.length == 0
+                                         UI.user_error!("No app identifier") if value.to_s.length.zero?
                                        end),
           FastlaneCore::ConfigItem.new(key: :type,
                                        description: "Provisioning profile type",
